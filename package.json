@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "name": "equanimity.id",
+  "description": "A Developer Team",
   "version": "0.2.11",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Agus Imam Fauzi <agus7fauzi@gmail.com>",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
