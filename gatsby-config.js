@@ -1,27 +1,39 @@
 require(`dotenv`).config()
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const mdx = true
 
 module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
+    siteTitle: `Equanimity ID`,
+    siteTitleAlt: `Equanimity ID - A Software Developer Team`,
+    siteHeadline: `Equanimity ID - A Software Developer Team`,
+    siteUrl: `https://equanimity.id`,
     siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
-    siteLanguage: `en`,
+    siteLanguage: `id`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@agus7fauzi`,
+    basePath: '/'
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      // See the theme's README for all available options
-      options: {},
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/sections`,
+      },
     },
+    mdx && {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        lessBabel: true,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

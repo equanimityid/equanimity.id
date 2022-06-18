@@ -5,6 +5,7 @@
   "version": "0.2.11",
   "author": "Agus Imam Fauzi <agus7fauzi@gmail.com>",
   "license": "0BSD",
+  "main": "index.js",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
     "build": "gatsby build",
@@ -16,15 +17,39 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^3.0.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@react-spring/parallax": "^9.4.5",
+    "@react-spring/web": "^9.4.5",
+    "@theme-ui/presets": "^0.11.1",
     "gatsby": "^4.12.1",
     "gatsby-plugin-gatsby-cloud": "^4.12.1",
     "gatsby-plugin-manifest": "^4.12.1",
+    "gatsby-plugin-mdx": "^3.15.2",
+    "gatsby-plugin-react-helmet": "^5.15.0",
+    "gatsby-plugin-theme-ui": "^0.11.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "gatsby-source-filesystem": "^4.15.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "theme-ui": "^0.11.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "bugs": {
+    "url": "https://github.com/equanimityid/equanimity.id/issues"
+  },
+  "homepage": "https://equanimity.id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equanimityid/equanimity.id",
+    "directory": "/"
+  },
+  "engines": {
+    "node": ">=14.15.0"
   }
 }
