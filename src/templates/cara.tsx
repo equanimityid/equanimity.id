@@ -13,8 +13,8 @@ const Cara = () => {
   useEffect(() => {
     const hours = new Date().getHours()
     const isDayTime = hours > 6 && hours < 20
-    
-    if (isDayTime && colorMode === 'dark')
+
+    if (isDayTime)
       setColorMode('light')
     else
       setColorMode('dark')
